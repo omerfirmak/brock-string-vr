@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brock String VR</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #1b1e24; font-family: system-ui, sans-serif; }
+    #help {
+      position: absolute; top: 12px; left: 12px; max-width: 360px;
+      padding: 12px 14px; border-radius: 8px;
+      background: rgba(10, 12, 16, 0.8); color: #d8dce4; font-size: 13px; line-height: 1.45;
+    }
+    #help h1 { font-size: 15px; margin: 0 0 6px; color: #fff; }
+    #help kbd { background: #2c313a; border-radius: 3px; padding: 0 4px; font-size: 12px; }
+    #help p { margin: 6px 0 0; color: #9aa3b2; }
+  </style>
+  <!-- Pinned three.js version -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="help">
+    <h1>Brock String VR</h1>
+    Put on your headset and press <b>ENTER VR</b>. You can also look around in this desktop preview:<br />
+    <kbd>M</kbd> / <kbd>1</kbd>–<kbd>4</kbd> change mode · <kbd>Space</kbd> action ·
+    <kbd>R</kbd> secondary · <kbd>↑</kbd><kbd>↓</kbd> adjust · <kbd>H</kbd> hide panel
+    <p>The desktop view is a single image, so it can't train vergence. Use a headset for real practice.</p>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
